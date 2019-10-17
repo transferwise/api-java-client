@@ -43,7 +43,7 @@ jobs:
           command: git config --global user.name "TransferWise CircleCI" && git config --global user.email circle@circle.tw.ee
       - run:
           name: Publish release
-          command: bash ./gradlew publish --console=plain
+          command: bash ./gradlew uploadArchives --console=plain
 
 workflows:
   version: 2
